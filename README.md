@@ -27,7 +27,7 @@ Install the required Python dependencies listed in `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
-``
+```
 
 Running the Tests
 UI Tests
