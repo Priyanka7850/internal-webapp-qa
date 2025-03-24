@@ -1,6 +1,7 @@
-selenium
-pytest
-requests
-allure-pytest
-pytest-html
-pytest-cov
+selenium==4.0.0
+pytest==7.0.0
+allure-pytest==2.9.45
+requests==2.26.0
+pytest-allure-adaptor==2.9.45
+postman==latest
+newman==5.1.0
