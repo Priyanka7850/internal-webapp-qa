@@ -1,1 +1,95 @@
+{
+  "info": {
+    "_postman_id": "12345678-abcd-1234-abcd-1234567890ab",
+    "name": "Ecommerce API Collection",
+    "description": "Postman collection for Ecommerce API testing. This collection covers the basic operations for managing orders in the e-commerce API.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Orders",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.example.com/orders",
+          "protocol": "https",
+          "host": ["api", "example", "com"],
+          "path": ["orders"]
+        },
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Place Order",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "https://api.example.com/orders",
+          "protocol": "https",
+          "host": ["api", "example", "com"],
+          "path": ["orders"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"product_id\":1, \"quantity\":2, \"address\":\"123 Street\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      },
+      "response": []
+    },
+    {
+      "name": "Update Order",
+      "request": {
+        "method": "PUT",
+        "url": {
+          "raw": "https://api.example.com/orders/{{order_id}}",
+          "protocol": "https",
+          "host": ["api", "example", "com"],
+          "path": ["orders", "{{order_id}}"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"quantity\":3}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ]
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Order",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "https://api.example.com/orders/{{order_id}}",
+          "protocol": "https",
+          "host": ["api", "example", "com"],
+          "path": ["orders", "{{order_id}}"]
+        },
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}
 
