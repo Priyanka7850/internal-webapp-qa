@@ -1,0 +1,41 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set Up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run UI Tests (Selenium)
+        run: pytest tests/ --alluredir=reports/
+
+      - name: Run API Tests (Requests)
+        run: pytest api_tests/ --alluredir=reports/
+
+      - name: Generate Allure Report
+        run: |
+          pip install allure-pytest
+          allure generate reports/ -o reports/html --clean
+
+      - name: Upload Test Reports
+        uses: actions/upload-artifact@v3
+        with:
+          name: allure-reports
+          path: reports/html/
