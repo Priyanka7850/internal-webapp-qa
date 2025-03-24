@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py38, py39, type
+
+[testenv]
+deps = pytest
+commands = pytest tests/
+
+[testenv:type]
+deps = mypy
+commands = mypy src/
+"""
