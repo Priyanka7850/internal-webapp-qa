@@ -58,8 +58,8 @@ The testing will cover all public and internal APIs, including user authenticati
 **Software:**
 
 - **Operating Systems:** Linux, Windows Server.
-- **Databases:** MySQL, MongoDB.
-- **Tools:** Postman for API testing, JMeter for performance testing, OWASP ZAP for security testing.
+- **Databases:** MySQL.
+- **Tools:** Postman for API testing, JMeter for performance testing.
 
 **Network:**
 
