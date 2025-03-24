@@ -1,5 +1,3 @@
-
-
 class Order:
     def __init__(self, user, items, total):
         self.user = user
