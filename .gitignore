@@ -1,0 +1,16 @@
+# Python
+*.pyc
+__pycache__/
+
+# Test reports
+reports/
+
+# IDE-specific
+.vscode/
+.idea/
+
+# Environment files
+.env
+
+# ChromeDriver
+chromedriver/
