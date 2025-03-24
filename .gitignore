@@ -8,9 +8,28 @@ reports/
 # IDE-specific
 .vscode/
 .idea/
+*.sublime-workspace
+*.sublime-project
 
 # Environment files
 .env
+.venv/
+env/
+venv/
 
 # ChromeDriver
 chromedriver/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Virtual Environment
+venv/
+ENV/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
