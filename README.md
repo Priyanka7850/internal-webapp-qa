@@ -21,7 +21,7 @@ Clone this repository and navigate into the project directory:
 ```bash
 git clone https://github.com/yourusername/qa-automation-framework.git
 cd qa-automation-framework
-
+```
 ### 3. Install Dependencies
 Install the required Python dependencies listed in `requirements.txt`:
 
