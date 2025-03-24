@@ -1,5 +1,3 @@
-
-
 def hash_password(password):
     # パスワードのハッシュ化処理を実装します
     pass
